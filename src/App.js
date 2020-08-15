@@ -16,7 +16,7 @@ class App extends Component {
       })
     })
 
-    const cable = ActionCable.createConsumer('ws://share-your-think-back.herokuapp.com/cable')
+    const cable = ActionCable.createConsumer('https://share-your-think-back.herokuapp.com/cable')
     this.sub = cable.subscriptions.create('MessagesChannel', {
       received: this.handleReceiveNewText
     })

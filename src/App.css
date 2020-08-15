@@ -1,38 +1,22 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+body{
+  background-image: radial-gradient(circle, #565656, #414141, #2d2d2d, #1a1a1a, #000000);
+}
+
+.container{
+  font-family: 'Alata', sans-serif;
+  width: 80%;
+  margin-top: 2%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1.title{
+  color: #eeeeee;
   text-align: center;
+  font-weight: bold;
+  font-size:4vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -10,13 +10,13 @@ class App extends Component {
   state = { body: '' }
 
   componentDidMount() {
-    window.fetch('http://localhost:3001/messages/1').then(data => {
+    window.fetch('https://share-your-think-back.herokuapp.com/1').then(data => {
       data.json().then(res => {
         this.setState({ body: res.body })
       })
     })
 
-    const cable = ActionCable.createConsumer('ws://localhost:3001/cable')
+    const cable = ActionCable.createConsumer('https://share-your-think-back.herokuapp.com/cable')
     this.sub = cable.subscriptions.create('MessagesChannel', {
       received: this.handleReceiveNewText
     })

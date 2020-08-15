@@ -10,7 +10,7 @@ class App extends Component {
   state = { body: '' }
 
   componentDidMount() {
-    window.fetch('https://share-your-think-back.herokuapp.com/1').then(data => {
+    window.fetch('https://share-your-think-back.herokuapp.com/messages/1').then(data => {
       data.json().then(res => {
         this.setState({ body: res.body })
       })
